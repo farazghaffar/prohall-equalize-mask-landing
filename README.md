@@ -2,12 +2,14 @@
 
 Static A/B landing pages for [Prohall Equalize Mask](https://shop.prohall.ai/products/prohall-equalize-mask-300g-10-oz-ph-balancing-hair-mask) on shop.prohall.ai, measured with Split.
 
-| Version | Path | Headline |
-|---|---|---|
-| A | `/equalize-mask/v1/a/` | Meet Equalize — the pH-balancing hair mask |
-| B | `/equalize-mask/v1/b/` | How to use Equalize for smooth, sealed, shiny hair |
+**Test: layout.** Both versions use the same headline ("Meet Equalize — the pH-balancing hair mask"), copy, photos, price and buttons; only the design differs.
 
-Both pages share `/equalize-mask/v1/assets/styles.css`; only the `<title>` and `<h1>` differ.
+| Version | Path | Layout |
+|---|---|---|
+| A | `/equalize-mask/v1/a/` | Classic: split hero, card grids, dark ingredients band |
+| B | `/equalize-mask/v1/b/` | Editorial: centered arched hero, numbered lists, timeline, dark buy band |
+
+Both load `/equalize-mask/v1/assets/styles.css` (brand tokens + layout A); B also loads `styles-b.css`.
 
 ## Live links (GitHub Pages)
 Settings → Pages → Source: **Deploy from a branch**, branch `main`, folder `/ (root)`.
