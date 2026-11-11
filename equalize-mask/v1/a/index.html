@@ -12,8 +12,32 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..700&family=Questrial&display=swap">
   <link rel="preload" as="image" href="https://cdn.shopify.com/s/files/1/0581/4065/5793/files/01_185fc30f-e8ef-4a7e-b5cd-40264fd09e2a.jpg?v=1792849123&width=900">
   <link rel="stylesheet" href="../assets/styles.css">
+  <!-- Meta Pixel 1762938528379464: PageView + ViewContent on load, AddToCart on add-to-cart clicks.
+       Purchase is sent by Shopify's Meta integration at checkout, never from this page. -->
+  <script>
+  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+  n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+  document,'script','https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1762938528379464');
+  fbq('track', 'PageView');
+  (function () {
+    var P = {"ids": ["48091208482993"], "prices": {"48091208482993": 34.99}, "value": 34.99, "name": "Prohall Equalize Mask", "page": "equalize-mask-v1-a", "variant": "A"};
+    var base = { content_type: 'product', content_name: P.name, currency: 'USD', landing_page: P.page, landing_variant: P.variant };
+    fbq('track', 'ViewContent', Object.assign({ content_ids: P.ids, value: P.value }, base));
+    document.addEventListener('click', function (e) {
+      var a = e.target && e.target.closest ? e.target.closest('a[href*="/cart/"]') : null;
+      var m = a && a.getAttribute('href').match(/\/cart\/(\d+):(\d+)/);
+      if (!m) return;
+      var qty = Number(m[2]);
+      fbq('track', 'AddToCart', Object.assign({ content_ids: [m[1]], num_items: qty, value: (P.prices[m[1]] || P.value) * qty }, base));
+    }, true);
+  })();
+  </script>
 </head>
 <body>
+  <noscript><img height="1" width="1" style="display:none" alt="" src="https://www.facebook.com/tr?id=1762938528379464&amp;ev=PageView&amp;noscript=1"></noscript>
   <a class="skip" href="#main">Skip to content</a>
 
   <div class="announce">pH-balancing mask · 300 g · Made in Brazil</div>
@@ -25,7 +49,7 @@
         <a class="hide-sm" href="#benefits">Benefits</a>
         <a class="hide-sm" href="#how-to-use">How to use</a>
         <a class="hide-sm" href="#faq">FAQ</a>
-        <a class="btn btn-primary" href="https://shop.prohall.ai/products/prohall-equalize-mask-300g-10-oz-ph-balancing-hair-mask">Shop now</a>
+        <a class="btn btn-primary" href="https://shop.prohall.ai/cart/48091208482993:1">Add to cart</a>
       </nav>
     </div>
   </header>
@@ -46,8 +70,8 @@
           </div>
 
           <div class="cta-row">
-            <a class="btn btn-primary" href="https://shop.prohall.ai/products/prohall-equalize-mask-300g-10-oz-ph-balancing-hair-mask">
-              Shop Equalize
+            <a class="btn btn-primary" href="https://shop.prohall.ai/cart/48091208482993:1">
+              Add to cart &mdash; $34.99
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
             </a>
             <a class="btn btn-ghost" href="#how-to-use">See how to use it</a>
@@ -123,7 +147,7 @@
             <li>After beach or pool days (rinse first, then apply)</li>
             <li>1 to 2 times a week whenever hair feels rough, dry or frizzy</li>
           </ul>
-          <a class="btn btn-primary" href="https://shop.prohall.ai/products/prohall-equalize-mask-300g-10-oz-ph-balancing-hair-mask">Shop Equalize</a>
+          <a class="btn btn-primary" href="https://shop.prohall.ai/cart/48091208482993:1">Add to cart</a>
         </div>
 
         <aside class="spec" aria-label="Product details">
@@ -241,8 +265,7 @@
               </li>
             </ul>
             <div class="cta-row">
-              <a class="btn btn-primary" href="https://shop.prohall.ai/cart/48091208482993:1">Buy now &mdash; $34.99</a>
-              <a class="btn btn-ghost" href="https://shop.prohall.ai/products/prohall-equalize-mask-300g-10-oz-ph-balancing-hair-mask">View product page</a>
+              <a class="btn btn-primary" href="https://shop.prohall.ai/cart/48091208482993:1">Add to cart &mdash; $34.99</a>
             </div>
           </div>
         </div>
@@ -288,7 +311,7 @@
         <h2 id="final-title">Bring your hair back into balance</h2>
         <p>Order Equalize on the official Prohall store, or browse the full professional range.</p>
         <div class="cta-row">
-          <a class="btn btn-gold" href="https://shop.prohall.ai/products/prohall-equalize-mask-300g-10-oz-ph-balancing-hair-mask">Shop Equalize</a>
+          <a class="btn btn-gold" href="https://shop.prohall.ai/cart/48091208482993:1">Add to cart</a>
           <a class="btn btn-ghost" href="https://shop.prohall.ai/collections/all">All products</a>
         </div>
       </div>
@@ -310,7 +333,7 @@
 
   <div class="sticky-buy">
     <span class="s-name"><strong>Equalize</strong>$34.99 &middot; 300 g</span>
-    <a class="btn btn-primary" href="https://shop.prohall.ai/products/prohall-equalize-mask-300g-10-oz-ph-balancing-hair-mask">Shop now</a>
+    <a class="btn btn-primary" href="https://shop.prohall.ai/cart/48091208482993:1">Add to cart</a>
   </div>
 
   <!-- Split tracking: replace this tag with the EXACT one copied from
